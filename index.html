@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: September 6, 2025 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro:wght@200;300;400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro:wght@200;300;400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.57c8519927888c94f1374080ee197c4f.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Sense and avoid technology" />
+
+
+
+
+
+  
+
+<meta name="description" content="A MAVLink-based plug-and-play obstacle detection and avoidance module designed to facilitate low-level flight operations." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://sense-and-avoid.github.io/" />
+<link rel="canonical" href="https://sense-and-avoid.github.io/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu5fff2d865028ed8b008e258da1539729_8844_32x32_fill_q75_lanczos_center.jpg" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu5fff2d865028ed8b008e258da1539729_8844_180x180_fill_q75_lanczos_center.jpg" />
+
+<meta name="theme-color" content="rgb(109, 194, 105)" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://sense-and-avoid.github.io/media/icon_hu5fff2d865028ed8b008e258da1539729_8844_512x512_fill_q75_lanczos_center.jpg" />
+<meta property="og:site_name" content="Multispectral UAV Surface Leak Monitoring" />
+<meta property="og:url" content="https://sense-and-avoid.github.io/" />
+<meta property="og:title" content="Multispectral UAV Surface Leak Monitoring" />
+<meta property="og:description" content="A MAVLink-based plug-and-play obstacle detection and avoidance module designed to facilitate low-level flight operations." /><meta property="og:image" content="https://sense-and-avoid.github.io/media/icon_hu5fff2d865028ed8b008e258da1539729_8844_512x512_fill_q75_lanczos_center.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta property="og:updated_time" content="2022-10-24T00:00:00&#43;00:00" />
+  
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://sense-and-avoid.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://sense-and-avoid.github.io/"
+}
+</script>
+
+
+  
+
+
+
+
+  
+  
+  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+  
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Multispectral UAV Surface Leak Monitoring" />
+  
+
+  
+
+
+  
+  <title>Multispectral UAV Surface Leak Monitoring</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   " data-wc-page-id="3976528693a0108357f4928017600865" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.fe8634e7d00f14d07fb33caf14cc8e55.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Multispectral UAV Surface Leak Monitoring</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Multispectral UAV Surface Leak Monitoring</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects" data-target="#projects"><span></span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+<span class="js-widget-page d-none"></span>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="work_projects" class="home-section wg-portfolio  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 ">
+
+  
+
+  
+
+  <div class=" row js-layout-row ">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+    
+    
+      
+    
+
+    
+    
+    
+    
+    
+
+    
+      
+        
+          <div class="col-12 isotope-item ">
+        
+        
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="col-lg-12 mb-5 view-showcase">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6">
+      <div class="section-subheading article-title mb-0 mt-0">Surface detection of pipeline leaks: Multi-spectral imaging for oil and water leakage in underground pipelines</div>
+
+      
+      <div class="article-style">
+        <p align='justify'> <span style="color:gray"> <a href="https://www.linkedin.com/in/dimple-bhuta-68425a47" target="_blank" class="custom-link">Dimple Bhuta</a>, <a href="" target="_blank" class="custom-link">Anand Siyote</a>, <a href="" target="_blank" class="custom-link">Saptajit Banerjee</a>, <a href="https://www.linkedin.com/in/sanket-bhegde-010967215/" target="_blank" class="custom-link">Sanket Bhegde</a>, <a href="" target="_blank" class="custom-link">Rohit Kushwaha</a>, <a href="https://www.aero.iitb.ac.in/~arya/" target="_blank" class="custom-link">Hemendra Arya</a> </span>
+      </div>
+      
+
+      <div class="btn-links">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+    <div class="col-12 col-md-6 order-first ">
+      
+
+      
+        
+        
+          <img src="/research_projects/obs_avoid/hardware_design_hubacf13ba2b4462334217e225e9abcd24_2440_540x0_resize_q75_h2_lanczos_3.webp" height="335" width="540"
+              alt="Surface detection of pipeline leaks: Multi-spectral imaging for oil and water leakage in underground pipelines" loading="lazy">
+        
+      
+    </div>
+  </div>
+</div>
+
+      </div>
+    
+
+  </div>
+
+</div>
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-markdown" class="home-section wg-markdown  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  <div class="col-12">
+    <h1> <center> <b> Abstract </b> </center></h1>  <p align='justify'> This paper introduces a surface level oil and water leakage detection using multispectral UAV
+  </div>
+
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-markdown" class="home-section wg-markdown  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  <div class="col-12">
+    <h1> <center> <b> Methodology </b> </center></h1>  <p align='justify'> Data Collection, Camera Specs,
+  </div>
+
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-markdown" class="home-section wg-markdown  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  <div class="col-12">
+    <h1><center><b>Test Images</b></center></h1>
+<p align='justify'></p>
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0084_1_3_Red.jpg"
+             alt="IMG_0084_1_3_Red.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0084_1_5_Red%20edge.jpg"
+             alt="IMG_0084_1_5_Red edge.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0086_1_3_Red.jpg"
+             alt="IMG_0086_1_3_Red.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0086_1_5_Red%20edge.jpg"
+             alt="IMG_0086_1_5_Red edge.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0125_1_3_Red.jpg"
+             alt="IMG_0125_1_3_Red.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0125_1_5_Red%20edge.jpg"
+             alt="IMG_0125_1_5_Red edge.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0144_1_3_Red.jpg"
+             alt="IMG_0144_1_3_Red.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0144_1_5_Red%20edge.jpg"
+             alt="IMG_0144_1_5_Red edge.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0294_1_3_Red.jpg"
+             alt="IMG_0294_1_3_Red.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0294_1_5_Red%20edge.jpg"
+             alt="IMG_0294_1_5_Red edge.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0316_1_3_Red.jpg"
+             alt="IMG_0316_1_3_Red.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0316_1_5_Red%20edge.jpg"
+             alt="IMG_0316_1_5_Red edge.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0416_1_3_Red.jpg"
+             alt="IMG_0416_1_3_Red.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0416_1_5_Red%20edge.jpg"
+             alt="IMG_0416_1_5_Red edge.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0501_1_3_Red.jpg"
+             alt="IMG_0501_1_3_Red.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Images_3channel/IMG_0501_1_5_Red%20edge.jpg"
+             alt="IMG_0501_1_5_Red edge.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+</div>
+
+
+  </div>
+
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-markdown" class="home-section wg-markdown  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  <div class="col-12">
+    <h1><center><b>Model Performance - YOLOv11</b></center></h1>
+<p align='justify'></p>
+
+<table border="1" cellspacing="0" cellpadding="6" style="margin: auto; border-collapse: collapse; text-align: center;">
+  <thead style="background:#f2f2f2;">
+    <tr>
+      <th>Class</th><th>mAP@50</th><th>mAP@50:95</th><th>IoU</th><th>Precision</th><th>Recall</th><th>F1-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Oil</td><td>--</td><td>--</td><td>0.9529</td><td>0.9701</td><td>0.9832</td><td>0.9766</td></tr>
+    <tr><td>Water</td><td>--</td><td>--</td><td>0.9873</td><td>0.9874</td><td>1.000</td><td>0.9937</td></tr>
+    <tr><td><b>Overall</b></td><td>0.99348</td><td>0.8232</td><td>0.9689</td><td>0.97682</td><td>0.98999</td><td>0.98334</td></tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-markdown" class="home-section wg-markdown  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  <div class="col-12">
+    <h1><center><b>Model Performance - Faster R-CNN</b></center></h1>
+<p align='justify'></p>
+
+
+<table border="1" cellspacing="0" cellpadding="6" style="margin: auto; border-collapse: collapse; text-align: center; width: 80%;">
+  <thead style="background:#f2f2f2;">
+    <tr>
+      <th>Class</th><th>mAP@50</th><th>mAP@50:95</th><th>IoU</th><th>Precision</th><th>Recall</th><th>F1-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Oil</td><td>--</td><td>--</td><td>0.986</td><td>0.932</td><td>0.952</td><td>0.942</td></tr>
+    <tr><td>Water</td><td>--</td><td>--</td><td>1.000</td><td>0.992</td><td>1.000</td><td>0.996</td></tr>
+    <tr><td><b>Overall</b></td><td>0.962</td><td>0.559</td><td>0.993</td><td>0.962</td><td>0.976</td><td>0.969</td></tr>
+  </tbody>
+</table>
+
+<br/>
+
+
+<div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <h3>Confusion Matrix</h3>
+    <img src="confusion_matrix_fasterrcnn_v2.png" alt="Confusion Matrix - Faster R-CNN" style="max-width:100%; border:1px solid #ccc; border-radius:10px;"/>
+  </div>
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <h3>Training & Validation</h3>
+    <img src="fasterrcnn.png" alt="Loss and mAP plots - Faster R-CNN" style="max-width:100%; border:1px solid #ccc; border-radius:10px;"/>
+  </div>
+</div>
+
+<br/>
+
+
+<h2><center><b>Test Results (Faster-RCNN)</b></center></h2>
+<p align='justify'></p>
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0084_1_3_Red_pred.jpg"
+             alt="IMG_0084_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0084_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0084_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0086_1_3_Red_pred.jpg"
+             alt="IMG_0086_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0086_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0086_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0125_1_3_Red_pred.jpg"
+             alt="IMG_0125_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0125_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0125_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0144_1_3_Red_pred.jpg"
+             alt="IMG_0144_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0144_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0144_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0294_1_3_Red_pred.jpg"
+             alt="IMG_0294_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0294_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0294_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0316_1_3_Red_pred.jpg"
+             alt="IMG_0316_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0316_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0316_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0416_1_3_Red_pred.jpg"
+             alt="IMG_0416_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0416_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0416_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0501_1_3_Red_pred.jpg"
+             alt="IMG_0501_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_fasterrcnn/IMG_0501_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0501_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+</div>
+
+
+  </div>
+
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-markdown" class="home-section wg-markdown  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  <div class="col-12">
+    <h1><center><b>Model Performance - RT-DETR</b></center></h1>
+<p align='justify'></p>
+
+<table border="1" cellspacing="0" cellpadding="6" style="margin: auto; border-collapse: collapse; text-align: center;">
+  <thead style="background:#f2f2f2;">
+    <tr>
+      <th>Class</th><th>mAP@50</th><th>mAP@50:95</th><th>IoU</th><th>Precision</th><th>Recall</th><th>F1-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Oil</td><td>--</td><td>--</td><td>0.7574</td><td>0.9693</td><td>0.7760</td><td>0.8620</td></tr>
+    <tr><td>Water</td><td>--</td><td>--</td><td>0.9468</td><td>0.9906</td><td>0.9548</td><td>0.9724</td></tr>
+    <tr><td><b>Overall</b></td><td>0.93733</td><td>0.6127</td><td>0.8479</td><td>0.89047</td><td>0.95896</td><td>0.92345</td></tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="projects" class="home-section wg-markdown  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+    <div class="row  justify-content-center">
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+  <div class="col-12">
+    <h1><center><b>Model Performance - Yolo-Fusion</b></center></h1>
+<p align='justify'></p>
+
+<table border="1" cellspacing="0" cellpadding="6" style="margin: auto; border-collapse: collapse; text-align: center;">
+  <thead style="background:#f2f2f2;">
+    <tr>
+      <th>Class</th><th>mAP@50</th><th>mAP@50:95</th><th>IoU</th><th>Precision</th><th>Recall</th><th>F1-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Oil</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
+    <tr><td>Water</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
+    <tr><td><b>Overall</b></td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+
+
+  
+    </div>
+  
+
+  </div>
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-citation" class="home-section wg-citation  "  >
+ <div class="home-section-bg " >
+   
+ </div>
+  <div class="container">
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+<div class="citation-block" style="background-color: rgb(234, 242, 250); border: 2px solid rgb(234, 242, 250); border-radius: 8px; padding: 20px; margin: 20px 0; font-family: Arial, sans-serif; font-size: 16px; color: rgb(25, 25, 25); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+    <h3 style="margin-top: 0; font-size: 20px; color: rgb(10, 10, 10);">Citation</h3>
+    <pre style="background-color: rgb(200, 220, 240); border-radius: 5px; padding: 10px; margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 14px; overflow-x: auto;">
+    @misc{ovsw2025,
+    title={Surface detection of pipeline leaks: Multi-spectral imaging for oil and water leakage in underground pipelines},
+    author={},
+    year={2025},
+    journal={}
+    }
+    </pre>
+</div>
+</div>
+
+
+  
+
+  </div>
+</section>
+
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 <a href="https://tihiitb.org/" > TIH Foundation for IoE and IoT</a>, at IIT, Bombay;  All rights reserved
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+        
+        
+      
+      
+      
+      Submitting a short paper manuscript to <a href="https://www.ieee-ies.org" target="_blank" rel="noopener">IEEE Transactions on Industrial Informatics</a>.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
