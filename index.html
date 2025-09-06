@@ -1776,20 +1776,119 @@
 
   <div class="col-12">
     <h1><center><b>Model Performance - Yolo-Fusion</b></center></h1>
-<p align='justify'></p>
 
-<table border="1" cellspacing="0" cellpadding="6" style="margin: auto; border-collapse: collapse; text-align: center;">
+
+<table border="1" cellspacing="0" cellpadding="6" style="margin: auto; border-collapse: collapse; text-align: center; width: 80%;">
   <thead style="background:#f2f2f2;">
     <tr>
       <th>Class</th><th>mAP@50</th><th>mAP@50:95</th><th>IoU</th><th>Precision</th><th>Recall</th><th>F1-score</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Oil</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
-    <tr><td>Water</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
-    <tr><td><b>Overall</b></td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
+    <tr><td>Oil</td><td>--</td><td>--</td><td>0.7546</td><td>0.8509</td><td>0.6545</td><td>0.7398</td></tr>
+    <tr><td>Water</td><td>--</td><td>--</td><td>0.9071</td><td>0.9671</td><td>0.8533</td><td>0.9066</td></tr>
+    <tr><td><b>Overall</b></td><td>0.8046</td><td>0.5159</td><td>0.8046</td><td>0.8610</td><td>0.7752</td><td>0.8159</td></tr>
   </tbody>
 </table>
+
+<br/>
+
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+
+  <div style="flex: 1; min-width: 280px; max-width: 350px; text-align: center;">
+    <h3 style="margin-bottom: 10px;">Training Loss</h3>
+    <img src="training_loss_yolofusion.png" alt="Training Loss - Yolo-fusion"
+         style="width:100%; height:auto; border:1px solid #ccc; border-radius:10px;"/>
+  </div>
+
+  <div style="flex: 1; min-width: 280px; max-width: 350px; text-align: center;">
+    <h3 style="margin-bottom: 10px;">Validation mAP</h3>
+    <img src="validation_map_yolofusion.png" alt="Validation mAP - Yolo-fusion"
+         style="width:100%; height:auto; border:1px solid #ccc; border-radius:10px;"/>
+  </div>
+
+  <div style="flex: 1; min-width: 280px; max-width: 350px; text-align: center;">
+    <h3 style="margin-bottom: 10px;">Confusion Matrix</h3>
+    <img src="confusion_matrix_yolofusion.png" alt="Confusion Matrix - Yolo-fusion"
+         style="width:100%; height:auto; border:1px solid #ccc; border-radius:10px;"/>
+  </div>
+
+</div>
+
+<br/>
+
+
+<h2><center><b>Test Results (YOLOv11-RGB2RGB (Fusion))</b></center></h2>
+<p align='justify'></p>
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11_fusion/IMG_0084_pred.jpg"
+             alt="IMG_0084_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11_fusion/IMG_0086_pred.jpg"
+             alt="IMG_0086_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11_fusion/IMG_0125_pred.jpg"
+             alt="IMG_0125_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11_fusion/IMG_0144_pred.jpg"
+             alt="IMG_0144_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11_fusion/IMG_0294_pred.jpg"
+             alt="IMG_0294_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11_fusion/IMG_0316_pred.jpg"
+             alt="IMG_0316_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11_fusion/IMG_0416_pred.jpg"
+             alt="IMG_0416_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11_fusion/IMG_0501_pred.jpg"
+             alt="IMG_0501_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+</div>
 
 
   </div>
