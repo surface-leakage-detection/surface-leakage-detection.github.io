@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: September 6, 2025 --><html lang="en-us" >
+<!-- Last Published: September 8, 2025 --><html lang="en-us" >
 
 
 <head>
@@ -1292,20 +1292,183 @@
 
   <div class="col-12">
     <h1><center><b>Model Performance - YOLOv11</b></center></h1>
-<p align='justify'></p>
 
-<table border="1" cellspacing="0" cellpadding="6" style="margin: auto; border-collapse: collapse; text-align: center;">
+
+<table border="1" cellspacing="0" cellpadding="6" style="margin: auto; border-collapse: collapse; text-align: center; width: 80%;">
   <thead style="background:#f2f2f2;">
     <tr>
       <th>Class</th><th>mAP@50</th><th>mAP@50:95</th><th>IoU</th><th>Precision</th><th>Recall</th><th>F1-score</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Oil</td><td>--</td><td>--</td><td>0.9529</td><td>0.9701</td><td>0.9832</td><td>0.9766</td></tr>
-    <tr><td>Water</td><td>--</td><td>--</td><td>0.9873</td><td>0.9874</td><td>1.000</td><td>0.9937</td></tr>
-    <tr><td><b>Overall</b></td><td>0.99348</td><td>0.8232</td><td>0.9689</td><td>0.97682</td><td>0.98999</td><td>0.98334</td></tr>
+    <tr><td>Oil</td><td>--</td><td>--</td><td>--</td><td>0.960</td><td>0.914</td><td>0.937</td></tr>
+    <tr><td>Water</td><td>--</td><td>--</td><td>--</td><td>0.983</td><td>0.987</td><td>0.985</td></tr>
+    <tr><td><b>Overall</b></td><td>0.989</td><td>0.806</td><td>--</td><td>0.972</td><td>0.951</td><td>0.961</td></tr>
   </tbody>
 </table>
+
+<br/>
+
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+
+  <div style="flex: 1; min-width: 280px; max-width: 350px; text-align: center;">
+    <h3 style="margin-bottom: 10px;">Training Loss</h3>
+    <img src="yolov11_loss.png" alt="Training Loss - YOLOv11"
+         style="width:100%; height:auto; border:1px solid #ccc; border-radius:10px;"/>
+  </div>
+
+  <div style="flex: 1; min-width: 280px; max-width: 350px; text-align: center;">
+    <h3 style="margin-bottom: 10px;">Validation mAP</h3>
+    <img src="yolov11_map.png" alt="Validation mAP - YOlOv11"
+         style="width:100%; height:auto; border:1px solid #ccc; border-radius:10px;"/>
+  </div>
+
+  <div style="flex: 1; min-width: 280px; max-width: 350px; text-align: center;">
+    <h3 style="margin-bottom: 10px;">Confusion Matrix</h3>
+    <img src="confusion_matrix_yolov11.png" alt="Confusion Matrix - YOLOv11"
+         style="width:100%; height:auto; border:1px solid #ccc; border-radius:10px;"/>
+  </div>
+
+</div>
+
+<br/>
+
+
+<h2><center><b>Test Results (YOLOv11)</b></center></h2>
+<p align='justify'></p>
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0084_1_3_Red_pred.jpg"
+             alt="IMG_0084_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0084_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0084_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0086_1_3_Red_pred.jpg"
+             alt="IMG_0086_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0086_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0086_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0125_1_3_Red_pred.jpg"
+             alt="IMG_0125_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0125_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0125_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0144_1_3_Red_pred.jpg"
+             alt="IMG_0144_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0144_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0144_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0294_1_3_Red_pred.jpg"
+             alt="IMG_0294_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0294_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0294_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0316_1_3_Red_pred.jpg"
+             alt="IMG_0316_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0316_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0316_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0416_1_3_Red_pred.jpg"
+             alt="IMG_0416_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0416_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0416_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0501_1_3_Red_pred.jpg"
+             alt="IMG_0501_1_3_Red_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+    
+      <div style="flex: 0 1 auto;">
+        <img src="/Test_Results_YoloV11/IMG_0501_1_5_Red%20edge_pred.jpg"
+             alt="IMG_0501_1_5_Red edge_pred.jpg"
+             style="max-width:200px; border:1px solid #ccc; border-radius:10px;"/>
+      </div>
+    
+  
+</div>
 
 
   </div>
